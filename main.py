@@ -18,12 +18,122 @@ Bot = Client(
 )
 
 
-@Bot.on_message(filters.private & filters.command("start"))
+START_TEXT = """**Hello {} 😌
+I am small media or file to telegra.ph link uploader bot.**
+
+>> `I can convert under 5MB photo or video to telegraph link.`
+
+Made by @FayasNoushad"""
+
+HELP_TEXT = """**Hey, Follow these steps:**
+
+➠ Just give me a media under 5MB
+➠ Then I will download it
+➠ I will then upload it to the telegra.ph link
+
+**Available Commands**
+
+/start - Checking Bot Online
+/help - For more help
+/about - For more about me
+/status - For bot updates
+
+Made by @FayasNoushad"""
+
+ABOUT_TEXT = """--**About Me**-- 😎
+
+🤖 **Name :** [Telegraph Uploader](https://telegram.me/{})
+
+👨‍💻 **Developer :** [Fayas](https://github.com/FayasNoushad)
+
+📢 **Channel :** [Fayas Noushad](https://telegram.me/FayasNoushad)
+
+👥 **Group :** [Developer Team](https://telegram.me/TheDeveloperTeam)
+
+🌐 **Source :** [👉 Click here](https://github.com/FayasNoushad/Telegraph-Uploader-Bot-V2)
+
+📝 **Language :** [Python3](https://python.org)
+
+🧰 **Framework :** [Pyrogram](https://pyrogram.org)
+
+📡 **Server :** [Heroku](https://heroku.com)"""
+
+FORCE_SUBSCRIBE_TEXT = "<code>Sorry Dear You Must Join My Updates Channel for using me 😌😉....</code>"
+
+START_BUTTONS = InlineKeyboardMarkup(
+        [[
+        InlineKeyboardButton('⚙ Help', callback_data='help'),
+        InlineKeyboardButton('About 🔰', callback_data='about'),
+        InlineKeyboardButton('Close ✖️', callback_data='close')
+        ]]
+    )
+
+HELP_BUTTONS = InlineKeyboardMarkup(
+        [[
+        InlineKeyboardButton('🏘 Home', callback_data='home'),
+        InlineKeyboardButton('About 🔰', callback_data='about'),
+        InlineKeyboardButton('Close ✖️', callback_data='close')
+        ]]
+    )
+
+ABOUT_BUTTONS = InlineKeyboardMarkup(
+        [[
+        InlineKeyboardButton('🏘 Home', callback_data='home'),
+        InlineKeyboardButton('Help ⚙', callback_data='help'),
+        InlineKeyboardButton('Close ✖️', callback_data='close')
+        ]]
+    )
+
+    )
+
+Bot.on_callback_query()
+async def cb_handler(bot, update):
+    if update.data == "home":
+        await update.message.edit_text(
+            text=START_TEXT.format(update.from_user.mention),
+            reply_markup=START_BUTTONS,
+            disable_web_page_preview=True
+        )
+    elif update.data == "help":
+        await update.message.edit_text(
+            text=HELP_TEXT,
+            reply_markup=HELP_BUTTONS,
+            disable_web_page_preview=True
+        )
+    elif update.data == "about":
+        await update.message.edit_text(
+            text=ABOUT_TEXT.format((await bot.get_me()).username),
+            reply_markup=ABOUT_BUTTONS,
+            disable_web_page_preview=True
+        )
+    else:
+        await update.message.delete()
+
+
+@Bot.on_message(filters.private & filters.command(["start"]))
 async def start(bot, update):
     await update.reply_text(
-        text=f"Hello {update.from_user.mention},\n\n I'ᴍ Tᴇʟᴇɢʀᴀᴍ ᴍᴇᴅɪᴀ Sᴛʀᴇᴀᴍɪɴɢ Bᴏᴛ ᴀs ᴡᴇʟʟ Dɪʀᴇᴄᴛ Lɪɴᴋs Gᴇɴᴇʀᴀᴛᴇ \n\n 𝗪𝗔𝗥𝗡𝗜𝗡𝗚 🚸\n🔞 Pʀᴏɴ ᴄᴏɴᴛᴇɴᴛꜱ ʟᴇᴀᴅꜱ ᴛᴏ ᴘᴇʀᴍᴀɴᴇɴᴛ ʙᴀɴ ʏᴏᴜ.\n\n🍃 Bᴏᴛ Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ :@M2Botz",
+        text=START_TEXT.format(update.from_user.mention),
         disable_web_page_preview=True,
-        quote=True
+	reply_markup=START_BUTTONS
+    )
+
+
+@Bot.on_message(filters.private & filters.command(["help"]))
+async def help(bot, update):
+    await update.reply_text(
+        text=HELP_TEXT,
+      	disable_web_page_preview=True,
+	reply_markup=HELP_BUTTONS
+    )
+
+
+@Bot.on_message(filters.private & filters.command(["about"]))
+async def about(bot, update):
+    await update.reply_text(
+        text=ABOUT_TEXT.format((await bot.get_me()).username),
+        disable_web_page_preview=True,
+	reply_markup=ABOUT_BUTTONS
     )
 
 
