@@ -18,45 +18,56 @@ Bot = Client(
 )
 
 
-START_TEXT = """**Hello {} 😌
-I am small media or file to telegra.ph link uploader bot.**
+START_TEXT = """**👋 Hᴇʏ {} 😌
+I'ᴍ Tᴇʟᴇɢʀᴀᴍ ᴍᴇᴅɪᴀ Sᴛʀᴇᴀᴍɪɴɢ Bᴏᴛ ᴀs ᴡᴇʟʟ Dɪʀᴇᴄᴛ Lɪɴᴋs Gᴇɴᴇʀᴀᴛᴇ.**
 
->> `I can convert under 5MB photo or video to telegraph link.`
+>> `Cʟɪᴄᴋ ᴏɴ /HELP ᴛᴏ ɢᴇᴛ ᴍᴏʀᴇ ɪɴғᴏʀᴍᴀᴛɪᴏɴ.`
 
-Made by @FayasNoushad"""
+>> `𝗪𝗔𝗥𝗡𝗜𝗡𝗚 🚸
+🔞 Pʀᴏɴ ᴄᴏɴᴛᴇɴᴛꜱ ʟᴇᴀᴅꜱ ᴛᴏ ᴘᴇʀᴍᴀɴᴇɴᴛ ʙᴀɴ ʏᴏᴜ.'
+
+🍃 Bᴏᴛ Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ : @M2BOTZ"""
 
 HELP_TEXT = """**Hey, Follow these steps:**
 
-➠ Just give me a media under 5MB
-➠ Then I will download it
-➠ I will then upload it to the telegra.ph link
+➠ Sᴇɴᴅ ᴍᴇ ᴀɴʏ ꜰɪʟᴇ (ᴏʀ) ᴍᴇᴅɪᴀ ꜰʀᴏᴍ ᴛᴇʟᴇɢʀᴀᴍ.
+➠ I ᴡɪʟʟ ᴘʀᴏᴠɪᴅᴇ ᴇxᴛᴇʀɴᴀʟ ᴅɪʀᴇᴄᴛ ᴅᴏᴡɴʟᴏᴀᴅ ʟɪɴᴋ !.
+➠ Aᴅᴅ Mᴇ ɪɴ ʏᴏᴜʀ Cʜᴀɴɴᴇʟ Fᴏʀ Dɪʀᴇᴄᴛ Dᴏᴡɴʟᴏᴀᴅ Lɪɴᴋs Bᴜᴛᴛᴏɴ
+➠ Tʜɪs Pᴇʀᴍᴇᴀɴᴛ Lɪɴᴋ Wɪᴛʜ Fᴀsᴛᴇsᴛ Sᴘᴇᴇᴅ
+
+🔸 𝗪𝗔𝗥𝗡𝗜𝗡𝗚 🚸
+
+🔞 Pʀᴏɴ ᴄᴏɴᴛᴇɴᴛꜱ ʟᴇᴀᴅꜱ ᴛᴏ ᴘᴇʀᴍᴀɴᴇɴᴛ ʙᴀɴ ʏᴏᴜ.
+
+Cᴏɴᴛᴀᴄᴛ ᴅᴇᴠᴇʟᴏᴘᴇʀ (ᴏʀ) ʀᴇᴘᴏʀᴛ ʙᴜɢꜱ : [ᴄʟɪᴄᴋ ʜᴇʀᴇ](https://t.me/ask_admin01)
 
 **Available Commands**
 
-/start - Checking Bot Online
-/help - For more help
-/about - For more about me
-/status - For bot updates
+ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs
 
-Made by @FayasNoushad"""
+/Start - ᴄʜᴇᴄᴋɪɴɢ ʙᴏᴛ ᴏɴʟɪɴᴇ
+/Help - ꜰᴏʀ ᴍᴏʀᴇ ʜᴇʟᴘ
+/About - ꜰᴏʀ ᴍᴏʀᴇ ᴀʙᴏᴜᴛ ᴍᴇ
 
-ABOUT_TEXT = """--**About Me**-- 😎
+ᴍᴀᴅᴇ ʙʏ @M2Botz"""
 
-🤖 **Name :** [Telegraph Uploader](https://telegram.me/{})
+ABOUT_TEXT = """--**ᴀʙᴏᴜᴛ ᴍᴇ**-- 😎
 
-👨‍💻 **Developer :** [Fayas](https://github.com/FayasNoushad)
+🤖 **ɴᴀᴍᴇ :[ᴍᴇᴅɪᴀ sᴛᴇᴀᴍ](https://telegram.me/{})
 
-📢 **Channel :** [Fayas Noushad](https://telegram.me/FayasNoushad)
+👨‍💻 **ᴅᴇᴠᴇʟᴏᴘᴇʀ :** [ᴍ2](https://telegram.me/ask_admin01)
 
-👥 **Group :** [Developer Team](https://telegram.me/TheDeveloperTeam)
+📢 **ᴄʜᴀɴɴᴇʟ :** [ᴄʟɪᴄᴋ ʜᴇʀᴇ](https://t.me/m2botz)
 
-🌐 **Source :** [👉 Click here](https://github.com/FayasNoushad/Telegraph-Uploader-Bot-V2)
+👥 **ɢʀᴏᴜᴘ :** [ᴄʟɪᴄᴋ ʜᴇʀᴇ](https://t.me/m2botzsupport)
 
-📝 **Language :** [Python3](https://python.org)
+🌐 **sᴏᴜʀᴄᴇ :** [ʀᴇʟᴇᴀsɪɴɢ sᴏᴏɴ](https://t.me/m2botz)
 
-🧰 **Framework :** [Pyrogram](https://pyrogram.org)
+📝 **ʟᴀɴɢᴜᴀɢᴇ :** [ᴘʏᴛʜᴏɴ3](https://python.org)
 
-📡 **Server :** [Heroku](https://heroku.com)"""
+🧰 **ꜰʀᴀᴍᴇᴡᴏʀᴋ :** [ᴘʏʀᴏɢʀᴀᴍ](https://pyrogram.org)
+
+📡 **sᴇʀᴠᴇʀ :** [ʜᴇʀᴏᴋᴜ](https://heroku.com)"""
 
 FORCE_SUBSCRIBE_TEXT = "<code>Sorry Dear You Must Join My Updates Channel for using me 😌😉....</code>"
 
