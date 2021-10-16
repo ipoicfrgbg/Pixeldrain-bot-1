@@ -84,7 +84,6 @@ ABOUT_BUTTONS = InlineKeyboardMarkup(
         ]]
     )
 
-    )
 
 Bot.on_callback_query()
 async def cb_handler(bot, update):
